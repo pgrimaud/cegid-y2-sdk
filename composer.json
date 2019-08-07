@@ -3,6 +3,7 @@
   "type": "library",
   "description": "CEGID / Y2 - SDK",
   "homepage": "https://github.com/pgrimaud/cegid-y2-sdk",
+  "license": "MIT",
   "authors": [
     {
       "name": "Pierre Grimaud",
