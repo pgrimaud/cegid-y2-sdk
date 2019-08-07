@@ -1,22 +1,7 @@
-# CEGID / Y2 - SDK
+<?php
 
-Consume CEGID/Y2's SOAP API.
+require_once __DIR__ . '/../vendor/autoload.php';
 
-## Requirements
-
- - PHP >= 5.6
- - Package php-soap (ext-soap extension)
-
-## Installation
-
-```
-composer require bigyouth/cegid-y2-sdk
-```
-## Basic usage
-
-Hello world :
-
-```php
 use Y2\HelloWorld;
 use Y2\ItemInventoryWcfService;
 use Y2\RetailContext;
@@ -43,8 +28,3 @@ try {
 } catch (SoapFault $e) {
     echo "SOAP ERROR CALL : " . $e->getMessage() . "\n";
 }
-```
-
-## Licence
-
-Licensed under the terms of the MIT License.
