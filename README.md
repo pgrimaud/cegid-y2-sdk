@@ -17,6 +17,8 @@ composer require pgrimaud/cegid-y2-sdk
 Hello world :
 
 ```php
+<?php
+
 use Y2\HelloWorld;
 use Y2\ItemInventoryWcfService;
 use Y2\RetailContext;
@@ -45,6 +47,6 @@ try {
 }
 ```
 
-## Licence
+## License
 
 Licensed under the terms of the MIT License.
