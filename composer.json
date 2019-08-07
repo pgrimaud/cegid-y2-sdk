@@ -1,8 +1,8 @@
 {
-  "name": "bigyouth/cegid-y2-sdk",
+  "name": "pgrimaud/cegid-y2-sdk",
   "type": "library",
   "description": "CEGID / Y2 - SDK",
-  "homepage": "https://github.com/bigyouth/cegid-y2-sdk",
+  "homepage": "https://github.com/pgrimaud/cegid-y2-sdk",
   "authors": [
     {
       "name": "Pierre Grimaud",

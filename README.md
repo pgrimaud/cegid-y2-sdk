@@ -10,7 +10,7 @@ Consume CEGID/Y2's SOAP API.
 ## Installation
 
 ```
-composer require bigyouth/cegid-y2-sdk
+composer require pgrimaud/cegid-y2-sdk
 ```
 ## Basic usage
 
