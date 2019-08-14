@@ -30,16 +30,16 @@ class GetAvailableQty
     protected $clientContext = null;
 
     /**
-     * @param string $itemId
+     * @param string         $itemId
      * @param ItemIdentifier $itemIdentifier
-     * @param string $storeId
-     * @param string $warehouseId
-     * @param RetailContext $clientContext
+     * @param string         $storeId
+     * @param string         $warehouseId
+     * @param RetailContext  $clientContext
      */
-    public function __construct($itemId, $itemIdentifier, $storeId, $warehouseId, $clientContext)
+    public function __construct($itemIdentifier, $itemId = null, $storeId = null, $warehouseId = null, $clientContext = null)
     {
-        $this->itemId         = $itemId;
         $this->itemIdentifier = $itemIdentifier;
+        $this->itemId         = $itemId;
         $this->storeId        = $storeId;
         $this->warehouseId    = $warehouseId;
         $this->clientContext  = $clientContext;
@@ -55,6 +55,7 @@ class GetAvailableQty
 
     /**
      * @param string $itemId
+     *
      * @return GetAvailableQty
      */
     public function setItemId($itemId)
@@ -73,6 +74,7 @@ class GetAvailableQty
 
     /**
      * @param ItemIdentifier $itemIdentifier
+     *
      * @return GetAvailableQty
      */
     public function setItemIdentifier($itemIdentifier)
@@ -91,6 +93,7 @@ class GetAvailableQty
 
     /**
      * @param string $storeId
+     *
      * @return GetAvailableQty
      */
     public function setStoreId($storeId)
@@ -109,6 +112,7 @@ class GetAvailableQty
 
     /**
      * @param string $warehouseId
+     *
      * @return GetAvailableQty
      */
     public function setWarehouseId($warehouseId)
@@ -127,6 +131,7 @@ class GetAvailableQty
 
     /**
      * @param RetailContext $clientContext
+     *
      * @return GetAvailableQty
      */
     public function setClientContext($clientContext)
