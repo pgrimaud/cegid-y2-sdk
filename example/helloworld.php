@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Y2\HelloWorld;
-use Y2\ItemInventoryWcfService;
-use Y2\RetailContext;
+use Y2\ItemInventory\HelloWorld;
+use Y2\ItemInventory\ItemInventoryWcfService;
+use Y2\ItemInventory\RetailContext;
 
 $wsdl     = ''; // WSDL interface
 $login    = ''; // credentials for basic auth
