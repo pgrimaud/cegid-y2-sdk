@@ -112,7 +112,7 @@ class OmniChannel
     }
 
     /**
-     * @return BillingStatus
+     * @return string
      */
     public function getBillingStatus()
     {
@@ -120,7 +120,7 @@ class OmniChannel
     }
 
     /**
-     * @param BillingStatus $BillingStatus
+     * @param string $BillingStatus
      * @return OmniChannel
      */
     public function setBillingStatus($BillingStatus)

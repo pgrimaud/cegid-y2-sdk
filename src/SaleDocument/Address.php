@@ -131,7 +131,7 @@ class Address
     }
 
     /**
-     * @return CountryIdType
+     * @return string
      */
     public function getCountryIdType()
     {
@@ -139,7 +139,7 @@ class Address
     }
 
     /**
-     * @param CountryIdType $CountryIdType
+     * @param string $CountryIdType
      * @return Address
      */
     public function setCountryIdType($CountryIdType)
