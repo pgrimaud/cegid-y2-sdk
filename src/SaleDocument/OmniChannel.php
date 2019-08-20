@@ -268,7 +268,7 @@ class OmniChannel
     }
 
     /**
-     * @return FollowUpStatus
+     * @return string
      */
     public function getFollowUpStatus()
     {
@@ -276,7 +276,7 @@ class OmniChannel
     }
 
     /**
-     * @param FollowUpStatus $FollowUpStatus
+     * @param string $FollowUpStatus
      * @return OmniChannel
      */
     public function setFollowUpStatus($FollowUpStatus)
@@ -388,7 +388,7 @@ class OmniChannel
     }
 
     /**
-     * @return PaymentStatus
+     * @return string
      */
     public function getPaymentStatus()
     {
@@ -396,7 +396,7 @@ class OmniChannel
     }
 
     /**
-     * @param PaymentStatus $PaymentStatus
+     * @param string $PaymentStatus
      * @return OmniChannel
      */
     public function setPaymentStatus($PaymentStatus)
@@ -406,7 +406,7 @@ class OmniChannel
     }
 
     /**
-     * @return OrderReturnStatus
+     * @return string
      */
     public function getReturnStatus()
     {
@@ -414,7 +414,7 @@ class OmniChannel
     }
 
     /**
-     * @param OrderReturnStatus $ReturnStatus
+     * @param string $ReturnStatus
      * @return OmniChannel
      */
     public function setReturnStatus($ReturnStatus)
@@ -424,7 +424,7 @@ class OmniChannel
     }
 
     /**
-     * @return ReturnType
+     * @return string
      */
     public function getReturnType()
     {
@@ -432,7 +432,7 @@ class OmniChannel
     }
 
     /**
-     * @param ReturnType $ReturnType
+     * @param string $ReturnType
      * @return OmniChannel
      */
     public function setReturnType($ReturnType)
