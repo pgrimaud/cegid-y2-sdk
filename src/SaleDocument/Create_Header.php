@@ -222,7 +222,7 @@ class Create_Header
         if ($Date == null) {
             $this->Date = null;
         } else {
-            $this->Date = $Date->format(\DateTime::ATOM);
+            $this->Date = $Date->format('Y-m-d');
         }
         return $this;
     }
