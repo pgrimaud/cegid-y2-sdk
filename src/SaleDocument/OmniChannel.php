@@ -232,7 +232,7 @@ class OmniChannel
     }
 
     /**
-     * @return DeliveryType
+     * @return string
      */
     public function getDeliveryType()
     {
@@ -240,7 +240,7 @@ class OmniChannel
     }
 
     /**
-     * @param DeliveryType $DeliveryType
+     * @param string $DeliveryType
      * @return OmniChannel
      */
     public function setDeliveryType($DeliveryType)
