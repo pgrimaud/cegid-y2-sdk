@@ -4,7 +4,6 @@ namespace Y2\SaleDocument;
 
 class Create_Header
 {
-
     /**
      * @var boolean $Active
      */
@@ -115,10 +114,10 @@ class Create_Header
      */
     protected $WarehouseId = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -126,17 +125,18 @@ class Create_Header
      */
     public function getActive()
     {
-      return $this->Active;
+        return $this->Active;
     }
 
     /**
      * @param boolean $Active
+     *
      * @return Create_Header
      */
     public function setActive($Active)
     {
-      $this->Active = $Active;
-      return $this;
+        $this->Active = $Active;
+        return $this;
     }
 
     /**
@@ -144,17 +144,18 @@ class Create_Header
      */
     public function getComment()
     {
-      return $this->Comment;
+        return $this->Comment;
     }
 
     /**
      * @param string $Comment
+     *
      * @return Create_Header
      */
     public function setComment($Comment)
     {
-      $this->Comment = $Comment;
-      return $this;
+        $this->Comment = $Comment;
+        return $this;
     }
 
     /**
@@ -162,17 +163,18 @@ class Create_Header
      */
     public function getCurrencyId()
     {
-      return $this->CurrencyId;
+        return $this->CurrencyId;
     }
 
     /**
      * @param string $CurrencyId
+     *
      * @return Create_Header
      */
     public function setCurrencyId($CurrencyId)
     {
-      $this->CurrencyId = $CurrencyId;
-      return $this;
+        $this->CurrencyId = $CurrencyId;
+        return $this;
     }
 
     /**
@@ -180,17 +182,18 @@ class Create_Header
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
      * @param string $CustomerId
+     *
      * @return Create_Header
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -198,29 +201,30 @@ class Create_Header
      */
     public function getDate()
     {
-      if ($this->Date == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->Date);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->Date == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->Date);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
      * @param \DateTime $Date
+     *
      * @return Create_Header
      */
     public function setDate(\DateTime $Date = null)
     {
-      if ($Date == null) {
-       $this->Date = null;
-      } else {
-        $this->Date = $Date->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($Date == null) {
+            $this->Date = null;
+        } else {
+            $this->Date = $Date->format(\DateTime::ATOM);
+        }
+        return $this;
     }
 
     /**
@@ -228,17 +232,18 @@ class Create_Header
      */
     public function getDeposit()
     {
-      return $this->Deposit;
+        return $this->Deposit;
     }
 
     /**
      * @param SaleDocumentLineIdentifier $Deposit
+     *
      * @return Create_Header
      */
     public function setDeposit($Deposit)
     {
-      $this->Deposit = $Deposit;
-      return $this;
+        $this->Deposit = $Deposit;
+        return $this;
     }
 
     /**
@@ -246,17 +251,18 @@ class Create_Header
      */
     public function getExternalReference()
     {
-      return $this->ExternalReference;
+        return $this->ExternalReference;
     }
 
     /**
      * @param string $ExternalReference
+     *
      * @return Create_Header
      */
     public function setExternalReference($ExternalReference)
     {
-      $this->ExternalReference = $ExternalReference;
-      return $this;
+        $this->ExternalReference = $ExternalReference;
+        return $this;
     }
 
     /**
@@ -264,29 +270,30 @@ class Create_Header
      */
     public function getExternalReferenceDate()
     {
-      if ($this->ExternalReferenceDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ExternalReferenceDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->ExternalReferenceDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->ExternalReferenceDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
      * @param \DateTime $ExternalReferenceDate
+     *
      * @return Create_Header
      */
     public function setExternalReferenceDate(\DateTime $ExternalReferenceDate = null)
     {
-      if ($ExternalReferenceDate == null) {
-       $this->ExternalReferenceDate = null;
-      } else {
-        $this->ExternalReferenceDate = $ExternalReferenceDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($ExternalReferenceDate == null) {
+            $this->ExternalReferenceDate = null;
+        } else {
+            $this->ExternalReferenceDate = $ExternalReferenceDate->format(\DateTime::ATOM);
+        }
+        return $this;
     }
 
     /**
@@ -294,17 +301,18 @@ class Create_Header
      */
     public function getFollowedReference()
     {
-      return $this->FollowedReference;
+        return $this->FollowedReference;
     }
 
     /**
      * @param string $FollowedReference
+     *
      * @return Create_Header
      */
     public function setFollowedReference($FollowedReference)
     {
-      $this->FollowedReference = $FollowedReference;
-      return $this;
+        $this->FollowedReference = $FollowedReference;
+        return $this;
     }
 
     /**
@@ -312,17 +320,18 @@ class Create_Header
      */
     public function getInternalReference()
     {
-      return $this->InternalReference;
+        return $this->InternalReference;
     }
 
     /**
      * @param string $InternalReference
+     *
      * @return Create_Header
      */
     public function setInternalReference($InternalReference)
     {
-      $this->InternalReference = $InternalReference;
-      return $this;
+        $this->InternalReference = $InternalReference;
+        return $this;
     }
 
     /**
@@ -330,17 +339,18 @@ class Create_Header
      */
     public function getLinesUnmodifiable()
     {
-      return $this->LinesUnmodifiable;
+        return $this->LinesUnmodifiable;
     }
 
     /**
      * @param boolean $LinesUnmodifiable
+     *
      * @return Create_Header
      */
     public function setLinesUnmodifiable($LinesUnmodifiable)
     {
-      $this->LinesUnmodifiable = $LinesUnmodifiable;
-      return $this;
+        $this->LinesUnmodifiable = $LinesUnmodifiable;
+        return $this;
     }
 
     /**
@@ -348,35 +358,37 @@ class Create_Header
      */
     public function getOmniChannel()
     {
-      return $this->OmniChannel;
+        return $this->OmniChannel;
     }
 
     /**
      * @param OmniChannel $OmniChannel
+     *
      * @return Create_Header
      */
     public function setOmniChannel($OmniChannel)
     {
-      $this->OmniChannel = $OmniChannel;
-      return $this;
+        $this->OmniChannel = $OmniChannel;
+        return $this;
     }
 
     /**
-     * @return DocumentOrigin
+     * @return string
      */
     public function getOrigin()
     {
-      return $this->Origin;
+        return $this->Origin;
     }
 
     /**
-     * @param DocumentOrigin $Origin
+     * @param string $Origin
+     *
      * @return Create_Header
      */
     public function setOrigin($Origin)
     {
-      $this->Origin = $Origin;
-      return $this;
+        $this->Origin = $Origin;
+        return $this;
     }
 
     /**
@@ -384,17 +396,18 @@ class Create_Header
      */
     public function getSalesPersonId()
     {
-      return $this->SalesPersonId;
+        return $this->SalesPersonId;
     }
 
     /**
      * @param string $SalesPersonId
+     *
      * @return Create_Header
      */
     public function setSalesPersonId($SalesPersonId)
     {
-      $this->SalesPersonId = $SalesPersonId;
-      return $this;
+        $this->SalesPersonId = $SalesPersonId;
+        return $this;
     }
 
     /**
@@ -402,17 +415,18 @@ class Create_Header
      */
     public function getStoreId()
     {
-      return $this->StoreId;
+        return $this->StoreId;
     }
 
     /**
      * @param string $StoreId
+     *
      * @return Create_Header
      */
     public function setStoreId($StoreId)
     {
-      $this->StoreId = $StoreId;
-      return $this;
+        $this->StoreId = $StoreId;
+        return $this;
     }
 
     /**
@@ -420,35 +434,37 @@ class Create_Header
      */
     public function getTaxExcluded()
     {
-      return $this->TaxExcluded;
+        return $this->TaxExcluded;
     }
 
     /**
      * @param boolean $TaxExcluded
+     *
      * @return Create_Header
      */
     public function setTaxExcluded($TaxExcluded)
     {
-      $this->TaxExcluded = $TaxExcluded;
-      return $this;
+        $this->TaxExcluded = $TaxExcluded;
+        return $this;
     }
 
     /**
-     * @return SaleDocumentType
+     * @return string
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
-     * @param SaleDocumentType $Type
+     * @param string $Type
+     *
      * @return Create_Header
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -456,17 +472,18 @@ class Create_Header
      */
     public function getUserDefinedDates()
     {
-      return $this->UserDefinedDates;
+        return $this->UserDefinedDates;
     }
 
     /**
      * @param ArrayOfUserDefinedDate $UserDefinedDates
+     *
      * @return Create_Header
      */
     public function setUserDefinedDates($UserDefinedDates)
     {
-      $this->UserDefinedDates = $UserDefinedDates;
-      return $this;
+        $this->UserDefinedDates = $UserDefinedDates;
+        return $this;
     }
 
     /**
@@ -474,17 +491,18 @@ class Create_Header
      */
     public function getUserDefinedTableCustomers()
     {
-      return $this->UserDefinedTableCustomers;
+        return $this->UserDefinedTableCustomers;
     }
 
     /**
      * @param ArrayOfUserDefinedTableCustomer $UserDefinedTableCustomers
+     *
      * @return Create_Header
      */
     public function setUserDefinedTableCustomers($UserDefinedTableCustomers)
     {
-      $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
-      return $this;
+        $this->UserDefinedTableCustomers = $UserDefinedTableCustomers;
+        return $this;
     }
 
     /**
@@ -492,17 +510,18 @@ class Create_Header
      */
     public function getUserDefinedTables()
     {
-      return $this->UserDefinedTables;
+        return $this->UserDefinedTables;
     }
 
     /**
      * @param ArrayOfUserDefinedTable $UserDefinedTables
+     *
      * @return Create_Header
      */
     public function setUserDefinedTables($UserDefinedTables)
     {
-      $this->UserDefinedTables = $UserDefinedTables;
-      return $this;
+        $this->UserDefinedTables = $UserDefinedTables;
+        return $this;
     }
 
     /**
@@ -510,17 +529,18 @@ class Create_Header
      */
     public function getUserFields()
     {
-      return $this->UserFields;
+        return $this->UserFields;
     }
 
     /**
      * @param ArrayOfUserField $UserFields
+     *
      * @return Create_Header
      */
     public function setUserFields($UserFields)
     {
-      $this->UserFields = $UserFields;
-      return $this;
+        $this->UserFields = $UserFields;
+        return $this;
     }
 
     /**
@@ -528,17 +548,18 @@ class Create_Header
      */
     public function getWarehouseId()
     {
-      return $this->WarehouseId;
+        return $this->WarehouseId;
     }
 
     /**
      * @param string $WarehouseId
+     *
      * @return Create_Header
      */
     public function setWarehouseId($WarehouseId)
     {
-      $this->WarehouseId = $WarehouseId;
-      return $this;
+        $this->WarehouseId = $WarehouseId;
+        return $this;
     }
 
 }

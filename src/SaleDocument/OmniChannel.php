@@ -442,7 +442,7 @@ class OmniChannel
     }
 
     /**
-     * @return ShippingStatus
+     * @return string
      */
     public function getShippingStatus()
     {
@@ -450,7 +450,7 @@ class OmniChannel
     }
 
     /**
-     * @param ShippingStatus $ShippingStatus
+     * @param string $ShippingStatus
      * @return OmniChannel
      */
     public function setShippingStatus($ShippingStatus)
