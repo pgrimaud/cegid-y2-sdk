@@ -105,10 +105,10 @@ class Create_Line
      */
     protected $UnitPrice = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**
@@ -116,17 +116,18 @@ class Create_Line
      */
     public function getBonId()
     {
-      return $this->BonId;
+        return $this->BonId;
     }
 
     /**
      * @param string $BonId
+     *
      * @return Create_Line
      */
     public function setBonId($BonId)
     {
-      $this->BonId = $BonId;
-      return $this;
+        $this->BonId = $BonId;
+        return $this;
     }
 
     /**
@@ -134,17 +135,18 @@ class Create_Line
      */
     public function getCatalogReference()
     {
-      return $this->CatalogReference;
+        return $this->CatalogReference;
     }
 
     /**
      * @param string $CatalogReference
+     *
      * @return Create_Line
      */
     public function setCatalogReference($CatalogReference)
     {
-      $this->CatalogReference = $CatalogReference;
-      return $this;
+        $this->CatalogReference = $CatalogReference;
+        return $this;
     }
 
     /**
@@ -152,17 +154,18 @@ class Create_Line
      */
     public function getComment()
     {
-      return $this->Comment;
+        return $this->Comment;
     }
 
     /**
      * @param string $Comment
+     *
      * @return Create_Line
      */
     public function setComment($Comment)
     {
-      $this->Comment = $Comment;
-      return $this;
+        $this->Comment = $Comment;
+        return $this;
     }
 
     /**
@@ -170,17 +173,18 @@ class Create_Line
      */
     public function getComplementaryDescription()
     {
-      return $this->ComplementaryDescription;
+        return $this->ComplementaryDescription;
     }
 
     /**
      * @param string $ComplementaryDescription
+     *
      * @return Create_Line
      */
     public function setComplementaryDescription($ComplementaryDescription)
     {
-      $this->ComplementaryDescription = $ComplementaryDescription;
-      return $this;
+        $this->ComplementaryDescription = $ComplementaryDescription;
+        return $this;
     }
 
     /**
@@ -188,29 +192,30 @@ class Create_Line
      */
     public function getDeliveryDate()
     {
-      if ($this->DeliveryDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->DeliveryDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->DeliveryDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->DeliveryDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
      * @param \DateTime $DeliveryDate
+     *
      * @return Create_Line
      */
     public function setDeliveryDate(\DateTime $DeliveryDate = null)
     {
-      if ($DeliveryDate == null) {
-       $this->DeliveryDate = null;
-      } else {
-        $this->DeliveryDate = $DeliveryDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($DeliveryDate == null) {
+            $this->DeliveryDate = null;
+        } else {
+            $this->DeliveryDate = $DeliveryDate->format('Y-m-d');
+        }
+        return $this;
     }
 
     /**
@@ -218,17 +223,18 @@ class Create_Line
      */
     public function getDiscountTypeId()
     {
-      return $this->DiscountTypeId;
+        return $this->DiscountTypeId;
     }
 
     /**
      * @param string $DiscountTypeId
+     *
      * @return Create_Line
      */
     public function setDiscountTypeId($DiscountTypeId)
     {
-      $this->DiscountTypeId = $DiscountTypeId;
-      return $this;
+        $this->DiscountTypeId = $DiscountTypeId;
+        return $this;
     }
 
     /**
@@ -236,17 +242,18 @@ class Create_Line
      */
     public function getExternalReference()
     {
-      return $this->ExternalReference;
+        return $this->ExternalReference;
     }
 
     /**
      * @param string $ExternalReference
+     *
      * @return Create_Line
      */
     public function setExternalReference($ExternalReference)
     {
-      $this->ExternalReference = $ExternalReference;
-      return $this;
+        $this->ExternalReference = $ExternalReference;
+        return $this;
     }
 
     /**
@@ -254,29 +261,30 @@ class Create_Line
      */
     public function getInitialDeliveryDate()
     {
-      if ($this->InitialDeliveryDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->InitialDeliveryDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->InitialDeliveryDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->InitialDeliveryDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
      * @param \DateTime $InitialDeliveryDate
+     *
      * @return Create_Line
      */
     public function setInitialDeliveryDate(\DateTime $InitialDeliveryDate = null)
     {
-      if ($InitialDeliveryDate == null) {
-       $this->InitialDeliveryDate = null;
-      } else {
-        $this->InitialDeliveryDate = $InitialDeliveryDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($InitialDeliveryDate == null) {
+            $this->InitialDeliveryDate = null;
+        } else {
+            $this->InitialDeliveryDate = $InitialDeliveryDate->format('Y-m-d');
+        }
+        return $this;
     }
 
     /**
@@ -284,17 +292,18 @@ class Create_Line
      */
     public function getItemIdentifier()
     {
-      return $this->ItemIdentifier;
+        return $this->ItemIdentifier;
     }
 
     /**
      * @param ItemIdentifier $ItemIdentifier
+     *
      * @return Create_Line
      */
     public function setItemIdentifier($ItemIdentifier)
     {
-      $this->ItemIdentifier = $ItemIdentifier;
-      return $this;
+        $this->ItemIdentifier = $ItemIdentifier;
+        return $this;
     }
 
     /**
@@ -302,17 +311,18 @@ class Create_Line
      */
     public function getLabel()
     {
-      return $this->Label;
+        return $this->Label;
     }
 
     /**
      * @param string $Label
+     *
      * @return Create_Line
      */
     public function setLabel($Label)
     {
-      $this->Label = $Label;
-      return $this;
+        $this->Label = $Label;
+        return $this;
     }
 
     /**
@@ -320,17 +330,18 @@ class Create_Line
      */
     public function getMovementReasonId()
     {
-      return $this->MovementReasonId;
+        return $this->MovementReasonId;
     }
 
     /**
      * @param string $MovementReasonId
+     *
      * @return Create_Line
      */
     public function setMovementReasonId($MovementReasonId)
     {
-      $this->MovementReasonId = $MovementReasonId;
-      return $this;
+        $this->MovementReasonId = $MovementReasonId;
+        return $this;
     }
 
     /**
@@ -338,17 +349,18 @@ class Create_Line
      */
     public function getNetUnitPrice()
     {
-      return $this->NetUnitPrice;
+        return $this->NetUnitPrice;
     }
 
     /**
      * @param float $NetUnitPrice
+     *
      * @return Create_Line
      */
     public function setNetUnitPrice($NetUnitPrice)
     {
-      $this->NetUnitPrice = $NetUnitPrice;
-      return $this;
+        $this->NetUnitPrice = $NetUnitPrice;
+        return $this;
     }
 
     /**
@@ -356,35 +368,37 @@ class Create_Line
      */
     public function getOmniChannel()
     {
-      return $this->OmniChannel;
+        return $this->OmniChannel;
     }
 
     /**
      * @param OmniChannelLine $OmniChannel
+     *
      * @return Create_Line
      */
     public function setOmniChannel($OmniChannel)
     {
-      $this->OmniChannel = $OmniChannel;
-      return $this;
+        $this->OmniChannel = $OmniChannel;
+        return $this;
     }
 
     /**
-     * @return DocumentOrigin
+     * @return string
      */
     public function getOrigin()
     {
-      return $this->Origin;
+        return $this->Origin;
     }
 
     /**
-     * @param DocumentOrigin $Origin
+     * @param string $Origin
+     *
      * @return Create_Line
      */
     public function setOrigin($Origin)
     {
-      $this->Origin = $Origin;
-      return $this;
+        $this->Origin = $Origin;
+        return $this;
     }
 
     /**
@@ -392,17 +406,18 @@ class Create_Line
      */
     public function getPackageReference()
     {
-      return $this->PackageReference;
+        return $this->PackageReference;
     }
 
     /**
      * @param string $PackageReference
+     *
      * @return Create_Line
      */
     public function setPackageReference($PackageReference)
     {
-      $this->PackageReference = $PackageReference;
-      return $this;
+        $this->PackageReference = $PackageReference;
+        return $this;
     }
 
     /**
@@ -410,17 +425,18 @@ class Create_Line
      */
     public function getQuantity()
     {
-      return $this->Quantity;
+        return $this->Quantity;
     }
 
     /**
      * @param float $Quantity
+     *
      * @return Create_Line
      */
     public function setQuantity($Quantity)
     {
-      $this->Quantity = $Quantity;
-      return $this;
+        $this->Quantity = $Quantity;
+        return $this;
     }
 
     /**
@@ -428,17 +444,18 @@ class Create_Line
      */
     public function getSalesPersonId()
     {
-      return $this->SalesPersonId;
+        return $this->SalesPersonId;
     }
 
     /**
      * @param string $SalesPersonId
+     *
      * @return Create_Line
      */
     public function setSalesPersonId($SalesPersonId)
     {
-      $this->SalesPersonId = $SalesPersonId;
-      return $this;
+        $this->SalesPersonId = $SalesPersonId;
+        return $this;
     }
 
     /**
@@ -446,17 +463,18 @@ class Create_Line
      */
     public function getSerialNumberId()
     {
-      return $this->SerialNumberId;
+        return $this->SerialNumberId;
     }
 
     /**
      * @param string $SerialNumberId
+     *
      * @return Create_Line
      */
     public function setSerialNumberId($SerialNumberId)
     {
-      $this->SerialNumberId = $SerialNumberId;
-      return $this;
+        $this->SerialNumberId = $SerialNumberId;
+        return $this;
     }
 
     /**
@@ -464,17 +482,18 @@ class Create_Line
      */
     public function getTaxes()
     {
-      return $this->Taxes;
+        return $this->Taxes;
     }
 
     /**
      * @param ArrayOfCreate_Tax $Taxes
+     *
      * @return Create_Line
      */
     public function setTaxes($Taxes)
     {
-      $this->Taxes = $Taxes;
-      return $this;
+        $this->Taxes = $Taxes;
+        return $this;
     }
 
     /**
@@ -482,17 +501,18 @@ class Create_Line
      */
     public function getUnitPrice()
     {
-      return $this->UnitPrice;
+        return $this->UnitPrice;
     }
 
     /**
      * @param float $UnitPrice
+     *
      * @return Create_Line
      */
     public function setUnitPrice($UnitPrice)
     {
-      $this->UnitPrice = $UnitPrice;
-      return $this;
+        $this->UnitPrice = $UnitPrice;
+        return $this;
     }
 
 }
