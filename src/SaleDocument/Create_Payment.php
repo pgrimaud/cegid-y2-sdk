@@ -55,7 +55,7 @@ class Create_Payment
      */
     public function __construct($Id)
     {
-      $this->Id = $Id;
+        $this->Id = $Id;
     }
 
     /**
@@ -63,17 +63,18 @@ class Create_Payment
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
      * @param float $Amount
+     *
      * @return Create_Payment
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -81,17 +82,18 @@ class Create_Payment
      */
     public function getBonId()
     {
-      return $this->BonId;
+        return $this->BonId;
     }
 
     /**
      * @param string $BonId
+     *
      * @return Create_Payment
      */
     public function setBonId($BonId)
     {
-      $this->BonId = $BonId;
-      return $this;
+        $this->BonId = $BonId;
+        return $this;
     }
 
     /**
@@ -99,17 +101,18 @@ class Create_Payment
      */
     public function getCreditCard()
     {
-      return $this->CreditCard;
+        return $this->CreditCard;
     }
 
     /**
      * @param CreditCard $CreditCard
+     *
      * @return Create_Payment
      */
     public function setCreditCard($CreditCard)
     {
-      $this->CreditCard = $CreditCard;
-      return $this;
+        $this->CreditCard = $CreditCard;
+        return $this;
     }
 
     /**
@@ -117,17 +120,18 @@ class Create_Payment
      */
     public function getCurrencyId()
     {
-      return $this->CurrencyId;
+        return $this->CurrencyId;
     }
 
     /**
      * @param string $CurrencyId
+     *
      * @return Create_Payment
      */
     public function setCurrencyId($CurrencyId)
     {
-      $this->CurrencyId = $CurrencyId;
-      return $this;
+        $this->CurrencyId = $CurrencyId;
+        return $this;
     }
 
     /**
@@ -135,29 +139,30 @@ class Create_Payment
      */
     public function getDueDate()
     {
-      if ($this->DueDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->DueDate);
-        } catch (\Exception $e) {
-          return false;
+        if ($this->DueDate == null) {
+            return null;
+        } else {
+            try {
+                return new \DateTime($this->DueDate);
+            } catch (\Exception $e) {
+                return false;
+            }
         }
-      }
     }
 
     /**
      * @param \DateTime $DueDate
+     *
      * @return Create_Payment
      */
     public function setDueDate(\DateTime $DueDate = null)
     {
-      if ($DueDate == null) {
-       $this->DueDate = null;
-      } else {
-        $this->DueDate = $DueDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        if ($DueDate == null) {
+            $this->DueDate = null;
+        } else {
+            $this->DueDate = $DueDate->format('Y-m-d');
+        }
+        return $this;
     }
 
     /**
@@ -165,17 +170,18 @@ class Create_Payment
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
      * @param int $Id
+     *
      * @return Create_Payment
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -183,17 +189,18 @@ class Create_Payment
      */
     public function getIsReceivedPayment()
     {
-      return $this->IsReceivedPayment;
+        return $this->IsReceivedPayment;
     }
 
     /**
      * @param boolean $IsReceivedPayment
+     *
      * @return Create_Payment
      */
     public function setIsReceivedPayment($IsReceivedPayment)
     {
-      $this->IsReceivedPayment = $IsReceivedPayment;
-      return $this;
+        $this->IsReceivedPayment = $IsReceivedPayment;
+        return $this;
     }
 
     /**
@@ -201,17 +208,18 @@ class Create_Payment
      */
     public function getMethodId()
     {
-      return $this->MethodId;
+        return $this->MethodId;
     }
 
     /**
      * @param string $MethodId
+     *
      * @return Create_Payment
      */
     public function setMethodId($MethodId)
     {
-      $this->MethodId = $MethodId;
-      return $this;
+        $this->MethodId = $MethodId;
+        return $this;
     }
 
     /**
@@ -219,17 +227,18 @@ class Create_Payment
      */
     public function getRegisterOperationForReceivedPayment()
     {
-      return $this->RegisterOperationForReceivedPayment;
+        return $this->RegisterOperationForReceivedPayment;
     }
 
     /**
      * @param string $RegisterOperationForReceivedPayment
+     *
      * @return Create_Payment
      */
     public function setRegisterOperationForReceivedPayment($RegisterOperationForReceivedPayment)
     {
-      $this->RegisterOperationForReceivedPayment = $RegisterOperationForReceivedPayment;
-      return $this;
+        $this->RegisterOperationForReceivedPayment = $RegisterOperationForReceivedPayment;
+        return $this;
     }
 
 }
