@@ -16,7 +16,7 @@ class SaleDocumentReference
     protected $InternalReference = null;
 
     /**
-     * @var SaleDocumentType $Type
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -63,7 +63,7 @@ class SaleDocumentReference
     }
 
     /**
-     * @return SaleDocumentType
+     * @return string
      */
     public function getType()
     {
@@ -71,7 +71,7 @@ class SaleDocumentReference
     }
 
     /**
-     * @param SaleDocumentType $Type
+     * @param string $Type
      * @return SaleDocumentReference
      */
     public function setType($Type)

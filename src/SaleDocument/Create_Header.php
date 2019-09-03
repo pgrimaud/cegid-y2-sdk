@@ -85,7 +85,7 @@ class Create_Header
     protected $TaxExcluded = null;
 
     /**
-     * @var SaleDocumentType $Type
+     * @var string $Type
      */
     protected $Type = null;
 

@@ -16,7 +16,7 @@ class SaleDocumentKey
     protected $Stump = null;
 
     /**
-     * @var SaleDocumentType $Type
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -63,7 +63,7 @@ class SaleDocumentKey
     }
 
     /**
-     * @return SaleDocumentType
+     * @return string
      */
     public function getType()
     {
@@ -71,7 +71,7 @@ class SaleDocumentKey
     }
 
     /**
-     * @param SaleDocumentType $Type
+     * @param string $Type
      * @return SaleDocumentKey
      */
     public function setType($Type)

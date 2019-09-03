@@ -11,7 +11,7 @@ class GetByExternalReference_Request
     protected $ExternalReference = null;
 
     /**
-     * @var SaleDocumentType $Type
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -40,7 +40,7 @@ class GetByExternalReference_Request
     }
 
     /**
-     * @return SaleDocumentType
+     * @return string
      */
     public function getType()
     {
@@ -48,7 +48,7 @@ class GetByExternalReference_Request
     }
 
     /**
-     * @param SaleDocumentType $Type
+     * @param string $Type
      * @return GetByExternalReference_Request
      */
     public function setType($Type)
